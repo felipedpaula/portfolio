@@ -1,0 +1,64 @@
+:root {
+    --primaryblue: #2C98F9;
+    --mediumblue: #0A70CB;
+    --darkblue: #00325F;
+    --lightgray: #E5E5E5;
+    --mediumgray: #CECECE;
+    --plusgray: #808080;
+    --darkgray: #303030;
+    --shadow: 2px 2px 10px 0px #80808050;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    overflow: hidden;
+}
+header,
+article,
+footer {
+    width: 100%;
+}
+.center {
+    width: 100%;
+    max-width: 970px;
+    margin: auto;
+}
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #cecece;
+}
+.topo-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.topo-nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.topo-nav nav  {
+    width: 100%;
+    padding: 0 15px;
+}
+.topo-nav nav ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.topo-nav li:hover {
+    color: var(--primaryblue);
+    font-weight: 500;
+}
