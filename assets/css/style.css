@@ -138,7 +138,7 @@ body {
 .center {
     width: 100%;
     margin: auto;
-    max-width: 1020px;
+    max-width: 820px;
 }
 .home-section {
     height: 800px;
@@ -185,30 +185,34 @@ body {
     color: #040b14;
 }
 .about-section,
+.curriculo-section,
 .atuacao-section {
     width: 100%;
     padding: 36px 12px;
 }
 .top-about,
+.top-curriculo,
 .top-atuacao {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 .top-about h2,
+.top-curriculo h2,
 .top-atuacao h2 {
     margin: 0;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .top-about hr,
+.top-curriculo hr,
 .top-atuacao hr {
     border: 2px solid #1DC98A;
     width: 80px;
     margin: 0;
 }
 .card-about,
-.car-atuacao {
+.card-curriculo {
     margin-top: 30px;
     width: 100%;
     display: flex;
@@ -216,7 +220,10 @@ body {
     justify-content: space-between;
 }
 .card-about img {
-    min-width: 360px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: -5px 5px 0px 0px #1DC98A;
 }
 .info-card-about {
     width: 100%;
@@ -227,7 +234,63 @@ body {
 .info-card-about p {
     line-height: 26px;
 }
-
+.area-curriculo {
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+}
+.curriculo-top-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+.curriculo-top-item img {
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    min-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+}
+.info-curriculo-top h4 {
+    margin: 0;
+}
+.info-curriculo-top p {
+    color: #5a5a5a;
+}
+.card-curriculo-bottom ul {
+    list-style: square;
+}
+.card-curriculo-bottom ul li {
+    font-weight: 700;
+    font-size: 18px;
+}
+.card-curriculo-bottom ul p {
+    color: #5a5a5a;
+}
+.list-stack {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+.stack-item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.title-stack {
+    font-weight: 600;
+    text-align: center;
+}
+.stars {
+    display: flex;
+    gap: 3px;
+}
 @media (max-width: 1020px) {
     .sidebar-left {
         position: fixed;
@@ -251,5 +314,21 @@ body {
     }
     .card-about {
         flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .list-stack {
+        gap: 20px;
+    }
+    .stack-item {
+        width: 45%;
+    }
+    .card-about img {
+        width: 280px;
+        height: 280px;
+        min-width: 280px;
+    }
+    .home-section-content h1, .home-section-content h3 {
+        padding-left: 30px;
     }
 }
