@@ -161,6 +161,20 @@ body {
     width: 100%;
     padding: 24px;
 }
+.top-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.top-about h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.top-about hr {
+    border: 2px solid #1DC98A;
+    width: 80px;
+    margin: 0;
+}
 @media (max-width: 1020px) {
     .sidebar-left {
         position: fixed;
