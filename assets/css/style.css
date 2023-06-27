@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     margin: 0;
@@ -41,9 +41,11 @@ body {
 }
 .content-sidebar-left {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 24px 12px;
+    justify-content: space-between;
+    padding: 36px 12px 24px 12px;
     align-items: center;
     color: #FFF;
 }
@@ -53,6 +55,13 @@ body {
     height: 120px;
     border-radius: 60px;
     border: 10px solid #212431 ;
+    overflow: hidden;
+}
+.img-perfil img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .social-sidebar {
     padding: 0 12px;
@@ -60,6 +69,10 @@ body {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+}
+.title-e-social {
+    width: 100%;
+    text-align: center;
 }
 .socia-item {
     background-color: #212431;
@@ -122,16 +135,21 @@ body {
 .main-site {
     width: 100%;
 }
+.center {
+    width: 100%;
+    margin: auto;
+    max-width: 1020px;
+}
 .home-section {
-    height: 100vh;
+    height: 800px;
     width: 100%;
 }
-.home-section img {
+.bg-home-section {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.25;
     z-index: 0;
 }
 .home-section-content {
@@ -146,35 +164,70 @@ body {
 }
 .home-section-content h1,
 .home-section-content h3 {
-    z-index: 4;
+    position: relative;
+    width: 100%;
     margin: 0;
     color: #040b14;
+    font-weight: 800;
+    opacity: 1 !important;
+    z-index: 4;
+    padding-left: 48px;
+}
+.home-section-content h1 {
+    font-size: 60px;
 }
 .home-section-content h3 {
     color: #1DC98A !important;
     margin-top: 15px;
+    font-size: 22px;
 }
 .home-section-content h3 .typed {
     color: #040b14;
 }
-.about-section {
+.about-section,
+.atuacao-section {
     width: 100%;
-    padding: 24px;
+    padding: 36px 12px;
 }
-.top-about {
+.top-about,
+.top-atuacao {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.top-about h2 {
+.top-about h2,
+.top-atuacao h2 {
     margin: 0;
+    font-weight: 600;
     margin-bottom: 10px;
 }
-.top-about hr {
+.top-about hr,
+.top-atuacao hr {
     border: 2px solid #1DC98A;
     width: 80px;
     margin: 0;
 }
+.card-about,
+.car-atuacao {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card-about img {
+    min-width: 360px;
+}
+.info-card-about {
+    width: 100%;
+}
+.info-card-about h3 {
+    margin: 0;
+}
+.info-card-about p {
+    line-height: 26px;
+}
+
 @media (max-width: 1020px) {
     .sidebar-left {
         position: fixed;
@@ -187,5 +240,16 @@ body {
 @media (max-width: 800px) {
     .home-section {
         height: 445px;
+    }
+    .nav-sidebar ul {
+        gap: 0;
+    }
+    .img-perfil {
+        width: 90px;
+        height: 90px;
+        border: 5px solid #212431;
+    }
+    .card-about {
+        flex-direction: column;
     }
 }
