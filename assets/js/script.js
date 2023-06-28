@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    // --------------------- MENU SANDWITCH
     let menuIcon = document.getElementById('menu-sand');
     let sideMenu = document.querySelector('.sidebar-left');
     let flagMenu = 0;
@@ -14,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // ------------------- CLOSE MENU
+
+
+    // ------------------ HOLO TEXT HOME
     const typed = document.querySelector('.typed')
     if (typed) {
         let typed_strings = typed.getAttribute('data-typed-items')
