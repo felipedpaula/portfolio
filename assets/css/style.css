@@ -63,12 +63,18 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.social-sidebar {
+.social-sidebar,
+.social-contato {
     padding: 0 12px;
     width: 100%;
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+}
+.social-contato {
+    max-width: 300px;
+    margin-top: 40px !important;
+    margin: 0 auto;
 }
 .title-e-social {
     width: 100%;
@@ -296,6 +302,74 @@ body {
     display: flex;
     gap: 3px;
 }
+.card-contato {
+    gap: 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.left-contato,
+.right-contato {
+    width: 50%;
+    height: 430px;
+    padding: 18px;
+}
+.left-contato {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-contato h4 {
+    margin: 0;
+}
+.right-contato {
+    background-color: #040b14;
+}
+.right-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.input-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input-form label {
+    font-weight: 500;
+    color: #FFF;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.input-field {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #adadad;
+    outline: 0;
+}
+.input-submit {
+    margin-top: 15px;
+    background-color: #212431;
+    border-radius: 4px;
+    border: 0;
+    padding: 10px;
+    color: #FFF;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.input-submit:hover {
+    background-color: #1DC98A;
+}
+.frase-motivacional {
+    padding: 18px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
 @media (max-width: 1020px) {
     .sidebar-left {
         position: fixed;
@@ -319,6 +393,13 @@ body {
     }
     .card-about {
         flex-direction: column;
+    }
+    .card-contato {
+        flex-direction: column-reverse;
+    }
+    .left-contato,
+    .right-contato {
+        width: 100%;
     }
 }
 @media (max-width: 600px) {
